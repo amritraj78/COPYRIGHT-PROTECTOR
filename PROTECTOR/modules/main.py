@@ -22,13 +22,13 @@ START_TEXT = """<b>🤖 ᴄᴏᴘʏʀɪɢʜᴛ ᴘʀᴏᴛᴇᴄᴛᴏʀ 🛡️
 """
 AUTHORIZED_USERS_FILE = "authorized_users.json"
 MAX_MESSAGE_LENGTH = 40
-Devs = ["7044783841", "7019293589", "6757745933"]
+Devs = ["8060797897"]
 
 # Define gd_buttons
 gd_buttons = [
-    [InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/JARVIS_V2"),
+    [InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/amrit_raj_9"),
      InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data="back_to_start"),
-     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/JARVIS_V_SUPPORT")]
+     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ANIME_UNBOUND")]
 ]
 
 # Load authorized users from file
@@ -71,7 +71,7 @@ async def start_command_handler(_, msg):
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await msg.reply_photo(
-        photo="https://telegra.ph/file/8f6b2cc26b522a252b16a.jpg",
+        photo="https://files.catbox.moe/qdbylv.jpg",
         caption=START_TEXT,
         reply_markup=reply_markup
     )
