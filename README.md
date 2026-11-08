@@ -1,30 +1,92 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h3><img  style="align-item" :"center" src="https://telegra.ph/file/fbd55ee956abef2a74e15.jpg" width="80px" height="70%"><img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&width=620&lines=✨+🦋+𝐇𝐄𝐘+𝐓𝐇𝐄𝐑𝐄+𝐓𝐇𝐈𝐒+𝐈𝐒+𝐕𝐈𝐏+𝐑𝐀𝐉𝐍𝐈𝐒𝐇+𝐗𝐃+🖤+🥀"></b></h3>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+# 🛡️ COPYRIGHT & ANTI-LEAK PROTECTOR BOT v2.0
+
 <p align="center">
-    <b>ᴠɪsɪᴛᴏʀs</b><br>
- -->    <img align="middle" src="https://profile-counter.glitch.me/doraemon890/count.svg" />
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Pyrogram-v2.0.106-green.svg" alt="Pyrogram">
+  <img src="https://img.shields.io/badge/Database-MongoDB-brightgreen.svg" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Deploy-Koyeb%20%7C%20Render%20%7C%20Heroku-orange.svg" alt="Deploy">
+  <img src="https://img.shields.io/badge/Status-Active%20%26%20Maintained-success.svg" alt="Status">
 </p>
-<h1 align ="center"><img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&width=350&lines=𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝+𝙿𝚛𝚘𝚝𝚎𝚌𝚝𝚘r+ʙᴏᴛ"></b></h1>
 
-<p align="center"><a href="https://t.me/jarvis2O"><img src="https://telegra.ph/file/20d1bcedcf901bed9bf65.jpg" width="600"></a></p>
+An advanced, high-performance Telegram bot designed to safeguard your groups and channels from **DMCA copyright strikes**, **illegal torrents & piracy leaks**, **unauthorized invite spam**, **edited message exploits**, and **anonymous channel impersonators**.
 
-# 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐌𝐄𝐍𝐓✨🦋
-<details>
-<summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
-<br>
-<p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/doraemon890/COPYRIGHT-PROTECTOR"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-</details>
+---
 
+## ✨ Features
 
-# 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 💗🥀
-<a href="https://t.me/jarvis2O"><img title="Telegram" src="https://img.shields.io/badge/JARVIS-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hackerdoraemon2@gmail.com"><img title="GMAIL" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-<a href="https://youtube.com/@rajnisha3"><img title="Youtube" src="https://img.shields.io/badge/youtube-%230077B5.svg?&style=for-the-badge&logo=youtube&logoColor=white"></a>
-<a href="https://instagram.com/_rajnish_mishra____"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
-<a href="https://t.me/BWANDARLOK"><img title="Support" src="https://img.shields.io/badge/Support-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+- 🛡️ **Anti-Forward Shield**: Automatically detects and deletes forwarded messages from other channels or users to prevent DMCA takedowns.
+- 🧲 **Anti-Piracy & Torrent Detection**: Eliminates `.torrent`, `.nzb` files, magnet links, and common piracy release terms (`camrip`, `telesync`, `hdcam`, `leaked course`, etc.).
+- 🔗 **Anti-Invite & Link Shield**: Blocks Telegram invite links (`t.me/+`, `t.me/joinchat`) and malicious URLs.
+- 📝 **Anti-Edit Message Exploit**: Catches users trying to sneak in copyright content or spam links by editing their message after sending.
+- 📢 **Anti-Channel Sender**: Blocks messages sent on behalf of external channels to avoid channel raids.
+- ⚙️ **Interactive Admin Control Panel**: Admins can toggle individual shields in real-time via `/settings` using inline buttons.
+- 🛡️ **Admin & Sudo Immunity**: Admins, owners, sudoers, and whitelisted members are automatically immune.
+- 🔔 **Self-Cleaning Warnings**: Warning messages self-destruct after 7 seconds, keeping group chats clean.
+- 🌐 **Built-in HTTP Health Server**: Integrates a lightweight `aiohttp` web server on port `8000` to pass health checks seamlessly on Koyeb, Render, and cloud containers.
+- 📊 **Real-time Analytics**: Tracks protected groups, served users, and blocked violations in MongoDB.
+- 📢 **Advanced Broadcasting**: Sudoers can broadcast text or forwarded media to all groups and users with `-pin`, `-pinloud`, and `-user` options.
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+---
 
+## 🚀 One-Click Deployments
 
+### 1. Deploy on Koyeb
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/amritraj78/COPYRIGHT-PROTECTOR&branch=main&name=copyright-protector)
+
+### 2. Deploy on Heroku
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amritraj78/COPYRIGHT-PROTECTOR)
+
+### 3. Deploy via Docker
+```bash
+docker build -t copyright-protector .
+docker run -d --env-file .env --name protector -p 8000:8000 copyright-protector
+```
+
+---
+
+## 🛠️ Environment Variables
+
+| Variable | Required | Description |
+|---|---|---|
+| `API_ID` | Yes | Telegram API ID from [my.telegram.org](https://my.telegram.org) |
+| `API_HASH` | Yes | Telegram API Hash from [my.telegram.org](https://my.telegram.org) |
+| `BOT_TOKEN` | Yes | Bot Token from [@BotFather](https://t.me/BotFather) |
+| `BOT_USERNAME` | Yes | Username of your Telegram Bot (without @) |
+| `OWNER_ID` | Yes | Telegram User ID of the bot owner |
+| `MONGO_URL` | Yes | MongoDB Connection URI (Atlas or Local) |
+| `LOGGER_ID` | Optional | Telegram Channel / Group ID for bot logs |
+| `PORT` | Optional | HTTP Health server port (Default: `8000`) |
+
+---
+
+## 🎮 Commands
+
+### 👥 For Everyone
+- `/start` - Start the bot and get navigation menu.
+- `/help` - View interactive help cards and feature details.
+- `/ping` - Check bot response latency and system status.
+- `/stats` - View global protection stats and metrics.
+
+### ⚙️ Group Administrators
+- `/settings` - Open the interactive group protection panel.
+- `/protect on` - Enable all protection shields.
+- `/protect off` - Temporarily disable protection shields.
+- `/whitelist [reply/user_id]` - Whitelist a user (exempt from all filters).
+- `/unwhitelist [reply/user_id]` - Remove a user from whitelist.
+- `/whitelisted` - View list of whitelisted members in group.
+- `/purge [reply]` - Delete messages between reply and command.
+
+### 👑 Bot Owner & Sudo
+- `/broadcast [text/reply]` - Broadcast message to all protected groups.
+  - `-user` : Broadcast to all private users.
+  - `-pin` : Pin message silently.
+  - `-pinloud` : Pin message with notification.
+  - `-nobot` : Broadcast only to users.
+- `/auth <user_id>` - Grant global sudo privileges.
+- `/unauth <user_id>` - Revoke global sudo privileges.
+- `/listauth` - View all global sudoers.
+
+---
+
+## 📜 License
+Distributed under the **Apache License 2.0**.

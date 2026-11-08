@@ -1,10 +1,24 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
+FROM python:3.10-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PORT=8000
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    git \
+    ffmpeg \
+    libffi-dev \
     && rm -rf /var/lib/apt/lists/*
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install --upgrade pip
-RUN pip3 install -r requirements.txt
-CMD python -m PROTECTOR
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["python3", "-m", "PROTECTOR"]

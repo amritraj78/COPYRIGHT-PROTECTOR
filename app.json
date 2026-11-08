@@ -1,22 +1,25 @@
 {
-  "name": "COPYRIGHT POTECTOR",
-  "description": "Telegram Bot using Pyrogram",
-  "repository": "https://github.com/doraemon890/COPYRIGHT-PROTECTOR",
+  "name": "COPYRIGHT PROTECTOR",
+  "description": "High-performance Telegram Anti-Copyright & DMCA Protection Bot using Pyrogram",
+  "repository": "https://github.com/amritraj78/COPYRIGHT-PROTECTOR",
+  "keywords": ["telegram", "pyrogram", "copyright", "dmca", "anti-leak", "bot"],
   "env": {
     "API_ID": {
-      "description": "Your Telegram API ID",
+      "description": "Telegram API ID from my.telegram.org",
+      "value": "6435225",
       "required": true
     },
     "API_HASH": {
-      "description": "Your Telegram API Hash",
+      "description": "Telegram API Hash from my.telegram.org",
+      "value": "4e984ea35f854762dcde906dce426c2d",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Your Telegram Bot Token",
+      "description": "Telegram Bot Token from @BotFather",
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "Your Bot Username",
+      "description": "Bot Username without @",
       "required": true
     },
     "OWNER_ID": {
@@ -24,13 +27,23 @@
       "required": true
     },
     "LOGGER_ID": {
-      "description": "Your Logger Chat ID",
-      "required": true
+      "description": "Log Group / Channel ID (e.g. -100xxx)",
+      "required": false
     },
     "MONGO_URL": {
-      "description": "Your MongoDB URL",
+      "description": "MongoDB Connection URI",
       "required": true
+    },
+    "PORT": {
+      "description": "HTTP Port for Web Health Checks",
+      "value": "8000",
+      "required": false
     }
   },
-  "stack": "heroku-24"
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "stack": "container"
 }

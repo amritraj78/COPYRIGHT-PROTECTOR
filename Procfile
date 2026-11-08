@@ -1,1 +1,1 @@
-worker: python -m PROTECTOR
+web: python3 -m PROTECTOR
