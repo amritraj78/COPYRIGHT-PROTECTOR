@@ -60,6 +60,23 @@ async def main():
     # Start HTTP health check server for Koyeb/Render
     web_runner = await start_web_server()
 
+    # Start background keep-alive ping loop to prevent Koyeb idle sleep
+    async def keep_alive_self_ping():
+        ping_url = "https://copyright-protector-villianking-f3011d6a.apps.mistral.run/health"
+        logger.info(f"Keep-alive self-pinger started for {ping_url}")
+        await asyncio.sleep(60)
+        while True:
+            try:
+                import aiohttp
+                async with aiohttp.ClientSession() as session:
+                    async with session.get(ping_url, timeout=aiohttp.ClientTimeout(total=15)) as resp:
+                        logger.info(f"Keep-alive self-ping sent ({resp.status})")
+            except Exception as e:
+                logger.debug(f"Keep-alive ping error: {e}")
+            await asyncio.sleep(300)
+
+    asyncio.create_task(keep_alive_self_ping())
+
     # Load all modules dynamically
     loaded = 0
     for mod_name in ALL_MODULES:
